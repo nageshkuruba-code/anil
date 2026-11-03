@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Wesite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <nav class="navbar rrr">
+            <div class="logo">
+                <span><i class="fa-solid fa-2x  fa-utensils"></i></span>
+                <span><h1 class="text-danger"><span class="me-2 text-primary">Delicious</span>Bite</h1></span>
+            </div>
+            
+            <ul class="navbar-nav fw-bold fs-4">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a> </li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#offer" class="nav-link">Offers</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+           <div class="position-relative">
+                 <button class="btn rounded-5 bg-danger text-white me-3 " id="cart-button" aria-label="Shopping cart" aria-expanded="false"><i class="fa-solid fa-cart-shopping "></i></button>
+                 <span class="badge bg-dark position-absolute top-0 start-0 translate-middle-y ms-4" id="cart-count">0</span>
+                 <div class="cart-panel" id="cart-panel" hidden >
+                  <h2 class="h5">Your Cart</h2>
+                  <ul id="cart-items" class="list-unstyled mb-2"></ul>
+                  <p class="fw-bold mb-0">Subtotal: <span id="cart-subtotal">$0.00</span></p>
+                 </div>
+            <button class="btn bnt-lg rounded-5 bg-danger text-white me-4"><i class="fa-solid fa-bag-shopping"></i>order now</button>
+           </div>
+        </nav>
+    </header>
+    <div class="card red" id="home">
+        <div class="row">
+            <div class="col-md-6">
+                <button class="bg-danger btn rounded-5 mt-5 bg-opacity-10">20% off your first order</button>
+                <p class="h1 fw-bold mt-2">Delicious Food</p>
+                <p class="h1 fw-bold">Delivered <span class="text-danger">fresh warn</span></p>
+                <p class="mt-4 fs-3">Satisfy your cravings with our hand-crafted gourmet meals, made with 100% organic ingredients and delivered straight to your door in 30 minutes!</p>
+                <button class="bg-danger rounded-5 text-white fw-bold fs-5 ms-3 p-2 btn btn-lg mb-5">Explore more<i class="fa-solid fa-x fa-arrow-right-long"></i></button>
+                <button class=" rounded-5 text-dark btn-outline-warning fw-bold fs-5 ms-3 p-2 btn btn-lg mb-5" >Learn more</button>
+            </div>
+            <div class="col-md-5">
+                <img src="images/hero-food.jpg" alt="" class="rounded-5 mb-4 mt-5 ms-5" height="450px" width="500px">
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container-fluid">
+            <p class="h5 mt-5 text-center text-danger">Taste The Excellence</p>
+            <p class="h1 mt-2 text-center">Our Special Menu</p>
+            <div class="text-center mt-5">
+                <button class="btn btn-danger rounded-5">All dishes</button>
+                <button class="btn btn-outline-dark ms-3 rounded-5 ">Pizza</button>
+                <button class="btn btn-outline-dark ms-3 rounded-5">Burger</button>
+                <button class="btn btn-outline-dark  ms-3 rounded-5">Pasta</button>
+                <button class="btn btn-outline-dark  ms-3 rounded-5">Salad</button>
+                <button class="btn btn-outline-dark  ms-3 rounded-5">Desearts</button>
+            </div>
+        </div>
+    </section>
+  <div class="container mt-5" id="menu">
+    <div class="row ">
+        <div class="col-md-4 wee">
+            <div class="card ">
+                <div class="card-header ">
+                    <img src="images/pizza.jpg" alt="" class="img-fluid" >
+                </div>
+                <div class="card-body">
+                    <div class="pe">
+                        <p class="fw-bold">PIZZA</p>
+                        <span class="text-dark"><i class="fa-solid fa-star text-warning"></i>4.9</span>
+                    </div>
+                    <p class="fw-bold">Artisan Pepperoni Pizza</p>
+                    <p>Freshly baked pizza topped with spicy pepperoni, rich tomato sauce, and melted mozzarella.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="fw-bold mt-2 text-danger fs-4">$14.99</p>
+                    <button class="bg-danger rounded-5 text-white btn"><i class="fa-solid fa-cart-shopping"></i>Add</button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-4 wee">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/burger.jpg" alt="" class="img-fluid" style="height: 240px; width: 100%;">
+                </div>
+                <div class="card-body">
+                    <div class="pe">
+                        <p class="fw-bold">Burger</p>
+                        <span class="text-dark"><i class="fa-solid fa-star text-warning"></i>3.9</span>
+                    </div>
+                    <p class="fw-bold">Double Cheeseburgera</p>
+                    <p>Juicy double beef patty layered with melted cheddar cheese, pickles, and special sauce.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="fw-bold mt-2 text-danger fs-4">$9.99</p>
+                    <button class="bg-danger rounded-5 text-white btn"><i class="fa-solid fa-cart-shopping"></i>Add</button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-4 wee">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/pasta.jpg" alt="" class="img-fluid" style="height: 240px;">
+                </div>
+                <div class="card-body">
+                    <div class="pe">
+                        <p class="fw-bold">Pasta</p>
+                        <span class="text-dark"><i class="fa-solid fa-star text-warning"></i>4.5</span>
+                    </div>
+                    <p class="fw-bold">Fettuccine Alfredo</p>
+                    <p>Italian fettuccine pasta in rich parmesan garlic cream sauce with fresh herbs.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="fw-bold mt-2 text-danger fs-4">$12.99</p>
+                    <button class="bg-danger rounded-5 text-white btn"><i class="fa-solid fa-cart-shopping"></i>Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-4 wee">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/salad.jpg" alt="" class="img-fluid" >
+                </div>
+                <div class="card-body">
+                    <div class="pe">
+                        <p class="fw-bold">SALAD</p>
+                        <span class="text-dark"><i class="fa-solid fa-star text-warning"></i>5.0</span>
+                    </div>
+                    <p class="fw-bold">Fresh Garden Avocado Bowl</p>
+                    <p>Crispy greens, cherry tomatoes, fresh sliced avocado, and toasted seeds with olive oil dressing.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="fw-bold mt-2 text-danger fs-4">$20.99</p>
+                    <button class="bg-danger rounded-5 text-white btn"><i class="fa-solid fa-cart-shopping"></i>Add</button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-4 wee">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/fries.jpg" alt="" class="img-fluid" style="height: 240px; width: 100%;">
+                </div>
+                <div class="card-body">
+                    <div class="pe">
+                        <p class="fw-bold">FRIES</p>
+                        <span class="text-dark"><i class="fa-solid fa-star text-warning"></i>4.7</span>
+                    </div>
+                    <p class="fw-bold">Loaded Crispy Fries</p>
+                    <p>Golden crispy fries drizzled with melted cheese sauce, jalapeÃ±os, and bacon bits.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="fw-bold mt-2 text-danger fs-4">$6.99</p>
+                    <button class="bg-danger rounded-5 text-white btn"><i class="fa-solid fa-cart-shopping"></i>Add</button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-4 wee">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/lava-cake.jpg" alt="" class="img-fluid" style="height: 240px; width: 100%;">
+                </div>
+                <div class="card-body">
+                    <div class="pe">
+                        <p class="fw-bold">DESSERTS</p>
+                        <span class="text-dark"><i class="fa-solid fa-star text-warning"></i>4.9</span>
+                    </div>
+                    <p class="fw-bold">Chocolate Molten Lava Cake</p>
+                    <p>Warm chocolate cake with a rich  chocolate center served with vanilla ice cream.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="fw-bold mt-2 text-danger fs-4">$15.99</p>
+                    <button class="bg-danger rounded-5 text-white btn"><i class="fa-solid fa-cart-shopping"></i>Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid  mt-5 bg-secondary bg-opacity-10" id="about">
+    <div class="row ">
+        <div class="col-5 mt-5 ms-5">
+            <img src="images/about-chef.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-6 mt-5 ms-5">
+            <p class="fw-bold text-danger">WHO WE ARE</p>
+            <P class="h1 ">Why Choose Delicious Bites?</P>
+            <P>We believe that great food starts with passion, fresh ingredients, and uncompromising quality. Our master chefs prepare each dish from scratch every single day to bring you an unforgettable culinary experience.</P>
+            <p class="fw-bold fs-5">100% Fresh & Organic</p>
+            <p>Sourced daily from certified local organic farms.</p>
+            <p class="fw-bold fs-5">Expert Master Chefs</p>
+            <p>Hand-crafted meals by passionate, experienced chefs.</p>
+            <p class="fw-bold fs-5">Superfast Delivery</p>
+            <p>Insulated packaging ensures hot and fresh delivery in 30 mins.</p>
+        </div>
+    </div>
+  </div>
+  <div class="container mt-5 bg-inf fff bg-opacity-10 text-center  rounded-5" id="offer">
+    <button class="btn fw-bold rounded-5 bg-danger bg-opacity-10 mt-4 ">limited time offer</button>
+    <p class="h1 ">Get Free Drink & Dessert On Orders Above $30!</p>
+    <p>Use promo code <button class="btn rounded-5 ms-3 me-3 btn-outline-danger text-white  ">DELICIOUS20</button> at checkout.</p>
+    <button class=" btn bg-danger fw-bold text-white mt-3 rounded-5 mb-5">Claim the offer</button>
+
+  </div>
+<div class="container-fluid mt-5 bg-dark text-white" id="contact">
+<div class="row">
+    <div class="col-md-3">
+        <div class="logo">
+            <span><i class="fa-solid fa-2x  fa-utensils"></i></span>
+            <span><h1 class="text-danger"><span class="me-2 text-primary">Delicious</span>Bite</h1></span>
+        </div>
+        <p>Bringing fresh, gourmet flavor to your doorstep with love and passion.</p>
+        <div class="social-links">
+            <a href="#" class="bg-secondary text-white rounded-5 p-2"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="bg-secondary p-2 text-white rounded-5"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="bg-secondary p-2 text-white rounded-5"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="bg-secondary p-2 text-white rounded-5"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+     </div>
+        <div class="col-3 ">
+            <div class="footer-col">
+                <h4 class="text-danger text-decoration-underline">Quick Links</h4>
+                <ul>
+                    <li class=""><a href="#home" class="text-decoration-none text-white">Home</a></li>
+                    <li><a href="#menu" class="text-decoration-none text-white">Our Menu</a></li>
+                    <li><a href="#about" class="text-decoration-none text-white">About Us</a></li>
+                    <li><a href="#offers" class="text-decoration-none text-white">Offers</a></li>
+                    <li><a href="#contact" class="text-decoration-none text-white">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-3">
+            <p class="fw-bold text-danger text-decoration-underline"> Popular Dishes</p>
+            <p>Pepperoni Pizza</p>
+            <p>Cheeseburger</p>
+            <p>Fettuccine Alfredo</p>
+            <p>Avocado Bowl</p>
+            <p>Lava Cake</p>
+        </div>
+        <div class="col-3">
+            <div class="footer-col input-group">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get weekly discount coupons!</p>
+                
+                    <input type="email" placeholder="Your Email..." required="" class="form-control">
+                    <span class="input-group-text"><button type="submit" class="btn bg-danger"><i class="fa-solid fa-arrow-right"></i></button></span>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+  <footer class="text-center bg-secondary text-white" style="height: 60px;">
+    <p class="fw-bold fs-5 ">Â© 2026 DeliciousBites. Built for learning HTML, CSS & JavaScript</p>
+  </footer>
+</body>
+</html>
